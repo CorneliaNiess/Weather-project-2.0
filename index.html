@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2741855aad.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="all rounded">
+        <div class="container header">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" id="rome" class="header"> Rome </a> 
+                </div>
+                <div class="col-3">
+                <a href="#" id="paris" class="header"> Paris </a>
+                </div>
+                <div class="col-3">
+                <a href="#" id="hamburg" class="header"> Hamburg </a>
+                </div>
+                <div class="col-3">
+                <a href="#" id="london" class="header"> London </a>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your city" aria-label="City name"
+                    aria-describedby="basic-addon2" id="input-city" />
+                <div class="input-group-append">
+                    <input type="submit" class="input-group-text" id="basic-addon2" value="Search" />
+                    <div class="input-group-append">
+                        <input type="submit" class="input-group-text" id="current-location" value="📍" ; />
+                    </div>
+                </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 today">
+                    <strong id="date">Today</strong>
+                    <h1>Loading...</h1>
+                    <p id="dataToday">
+                        <span id="description"> Cloudy </span>
+                        <br>
+                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icon">                        
+                    <span id="temperature"> 25 </span>
+                        <a href="#" id="celsius" class="unit"> °C </a>
+                        <span class="unit"> | </span>
+                        <a href="#" id="fahrenheit" class="unit"> °F </a>
+                    </p>
+                    <div id="list">
+                    <ul>
+                        <li id="humidity">Humidity: </li>
+                        <li id="windspeed">Windspeed: </li>
+                        <li id="clouds">Cloudiness:</li>
+                    </ul>
+                    </div>
+             </div>
+
+                <div class="col-4">
+                    <div class="future">
+                        <strong id="dayOne">Tomorrow</strong>
+                        <p><img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="iconOne">
+                     <span id="tempOne"> - </span>°C</p>
+                    </div>
+                    <div class="future">
+                        <strong id="dayTwo">Tue</strong>
+                        <p>
+                            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="iconTwo">
+                            <span id="tempTwo"> - </span> °C</p>
+                    </div>
+                    <div class="future">
+                        <strong id="dayThree">Wed</strong>
+                        <p>
+                            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="iconThree">
+                            <span id="tempThree"> - </span> °C</p>
+                    </div>
+                    <div class="future">
+                        <strong id="dayFour">Thu</strong>
+
+                        <p>
+                            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="iconFour">
+
+                        <span id="tempFour"> - </span>°C</p>
+                    </div>
+                    <div class="future">
+                        <strong id="dayFive">Fri</strong>
+
+
+                        <p>
+                            <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" id="iconFive">
+                            <span id="tempFive"> - </span>
+                            °C</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p  id="note">
+    <a href="https://github.com/CorneliaNiess/weather-project-2.0"> Open-source </a>coded by Cornelia Niess </p>
+</footer>
+<script src="src/index.js"></script>
+</body>
+
+</html>
